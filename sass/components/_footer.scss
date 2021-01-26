@@ -18,10 +18,23 @@ footer {
   }
   
   .footer-first-block {
-    margin-right: 70px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+    }
+
+      @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+      }
   }
   
-  .footer-second-block p {
+  .footer-second-block{
+
+    @media screen and (max-width: 767px){
+      margin-bottom: 60px;
+    }
+    
+    p {
     color: $white;
   
     font-size: 14px;
@@ -29,6 +42,7 @@ footer {
     line-height: 1.14;
     letter-spacing: 0.03em;
     margin-bottom: 20px;
+    }
   }
 
   .address-place {
@@ -36,19 +50,33 @@ footer {
   }
 
   .subscribe {
-    margin-left: auto;
+
+    @media screen and (min-width: 1200px) {
+      
+      margin-left: auto;
+    }
   }
   
   .subscribe-input {
 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 450px;
+    height: 50px;
+    padding: 15px 16px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+
     @media screen and (min-width: 1200px) {
       margin-right: 12px;
       width: 358px;
-      height: 50px;
-      padding: 15px 16px;
     }
   
-    background-color: $secondaryBgColor;
+    background-color: $mainBgColor;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     color: $white;
