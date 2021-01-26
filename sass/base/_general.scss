@@ -21,7 +21,11 @@ body {
 
   .current-page {
     position: relative;
-    color: $accent;
+    
+    
+    @media screen and (min-width:767px) {
+      color: $accent;
+    }
   }
 
   .section-title {

@@ -75,7 +75,12 @@ body {
 
 .current-page {
   position: relative;
-  color: #2196f3;
+}
+
+@media screen and (min-width: 767px) {
+  .current-page {
+    color: #2196f3;
+  }
 }
 
 .section-title {
@@ -340,7 +345,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  overflow-y: scroll;
   height: 100%;
 }
 
@@ -355,6 +359,7 @@ body {
 }
 
 .nav-socials li {
+  position: relative;
   color: #2196f3;
 }
 
@@ -366,6 +371,11 @@ body {
   .header-contacts svg {
     display: none;
   }
+}
+
+.soc-line {
+  position: absolute;
+  right: -10px;
 }
 
 .logo {
@@ -532,6 +542,7 @@ footer .logo {
 
 footer {
   padding: 60px 0;
+  text-align: center;
   background-color: #2f303a;
 }
 
