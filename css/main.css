@@ -137,14 +137,22 @@ header {
   }
 }
 
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 60px;
+}
+
 @media screen and (min-width: 1200px) {
   .header-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    height: 80px;
   }
 }
 
@@ -232,6 +240,43 @@ header {
   fill: currentColor;
 }
 
+.hidden-nav {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .hidden-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #ffffff;
+  border: none;
+  padding: 0;
+}
+
+.menu-close {
+  display: none;
+}
+
+.menu-button.is-open .menu-open {
+  display: none;
+}
+
+.menu-button.is-open .menu-close {
+  display: block;
+}
+
 .logo {
   margin-right: 93px;
 }
@@ -264,12 +309,18 @@ footer .logo {
 .hero {
   margin: 0 auto;
   max-width: 1600px;
-  padding: 200px 0;
+  padding: 118px 0;
   background-color: #f5f4fa;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-hero.jpg);
   background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
 }
 
 .hero-link {

@@ -1,7 +1,11 @@
 .hero {
     margin: 0 auto;
     max-width: 1600px;
-    padding: 200px 0;
+    padding: 118px 0;
+
+    @media screen and (min-width: 1200px) {
+      padding: 200px 0;
+    }
   
     background-color: $secondaryBgColor;
   
