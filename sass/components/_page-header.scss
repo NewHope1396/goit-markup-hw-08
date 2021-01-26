@@ -1,11 +1,38 @@
   header {
+
+   @media screen and (min-width: 1200px) {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+   }
   }
   
   .header-contacts {
+
+    display: flex;
+    flex-flow: column-reverse;
+
+    li{
+      font-weight: 500px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+    }
+
+    li:nth-child(2) {
+
+      margin-bottom: 32px;
+
+      font-size: 34px;
+
+      color: $accent;
+    }
+
+    li:nth-child(1) {
+      font-size: 24px;
+    }
+
+    margin-bottom: 64px;
 
     @media screen and (min-width: 1200px) { 
       display: flex;
@@ -41,6 +68,7 @@
 
   .navigation {
 
+
     @media screen and (min-width: 1200px) {
       display: flex;
       align-items: center;
@@ -50,15 +78,29 @@
 
   .nav-links {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 
+   
+
   .nav-item:not(:last-child) {
-    margin-right: 50px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+    }
   }
 
   .nav-list {
+
+    @media screen and (max-width: 767px) {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+    }
 
     @media screen and (min-width: 1200px) {
       display: flex;
@@ -84,6 +126,11 @@
   }
 
   .local-line {
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
     position: absolute;
     bottom: 0;
   
@@ -118,13 +165,20 @@
   }
 
   .hidden-nav{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
 
-    display: none;
+    padding: 48px 40px;
+
+    background-color: $white;
 
     @media screen and  (min-width: 1200px) {
       display: flex;
       align-items: center;
-      width: 100%;
+      
     }
   }
 
@@ -133,17 +187,51 @@
     background-color: $white;
     border: none;
     padding: 0;
-  }
 
-  .menu-close {
-    display: none;
-  }
-
-  .menu-button.is-open  {
-    .menu-open {
+    @media screen and (min-width: 768px) {
       display: none;
     }
-    .menu-close{ 
-      display: block;
+  }
+
+  .menu-close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+
+
+  .hid-nav-block{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+
+    height: 100%;
+  }
+
+
+  .nav-socials{
+    display: flex;
+
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    font-weight: 500;
+
+    li{
+      color: $accent;
+    }
+
+    li:not(:last-child){
+      margin-right: 20px;
+    }
+
+  }
+
+  .header-contacts svg{
+    @media screen and (max-width: 767px) {
+      display: none;
     }
   }
+  
+  
