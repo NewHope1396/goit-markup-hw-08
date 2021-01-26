@@ -46,8 +46,7 @@
   }
   
   .clients li {
-
-    width: 210px;
+    width: calc((100% - 30px) / 2);
     height: 90px;
 
     @media screen and (min-width: 1200px) {

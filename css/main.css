@@ -629,7 +629,7 @@ footer .logo {
 }
 
 .clients li {
-  width: 210px;
+  width: calc((100% - 30px) / 2);
   height: 90px;
 }
 
