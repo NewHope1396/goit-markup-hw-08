@@ -13,41 +13,77 @@
         <!-- Шапка -->
         <header class="portfolio-header">
             <div class="container header-container">
-                <nav class="navigation">
-                    <a href="" class="logo">
-                        <span class="logo-first-part">web</span><span class="logo-second-part">Studio</span>
-                    </a>
-                    <ul  class="nav-list">
-                        <li class="nav-item">
-                            <a href="./index.html" class="nav-links">студия</a>
-                        </li>
-                        <li class="nav-item current-page">
-                            <a href="./portfolio.html" class="nav-links">портфолио</a>
-                            <div class="local-line"></div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-links">контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="header-contacts">
-                    <li class="header-contacts-item">
-                        <a href="mailto:info@devstudio.com">
-                            <svg class="envelope">
-                                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                <a href="" class="logo">
+                    <span  class="logo-first-part">web</span><span class="logo-second-part">Studio</span>
+                </a>
+                <button data-menu-open class="menu-button menu-open" type="button" data-menu-button>
+                    <svg width="40px" height="40px">
+                        <use  href="./images/buttons-menu.svg#icon-menu_40px"></use>
+                    </svg>
+                </button>
+                <div data-menu class="hidden-nav is-hidden">
+                    <div class="hid-nav-block">
+                        <nav class="navigation">    
+                            <ul class="nav-list">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-links">
+                                        студия
+                                    </a>
+                                    <div class="local-line"></div>
+                                </li>
+                                <li class="current-page nav-item">
+                                    <a href="./portfolio.html" class="nav-links">портфолио</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-links">контакты</a >
+                                </li>
+                            </ul>
+                        </nav>
+                        <div>
+                            <ul class="header-contacts">
+                                <li class="header-contacts-item">
+                                    <a href="mailto:info@devstudio.com">
+                                        <svg class="envelope">
+                                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                                        </svg>
+                                        info@devstudio.com
+                                    </a>
+                                </li>
+                                <li class="header-contacts-item">
+                                    <a href="tel:+380961111111" >
+                                        <svg class="smartphone">
+                                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                                        </svg>
+                                       +38 096 111 11 11
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav-socials">
+                                <li>Instagram
+                                    <svg class="soc-line" width="1" height="22" viewBox="0 0 1 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="0.5" x2="0.5" y2="22" stroke="#212121" stroke-opacity="0.2"/>
+                                    </svg>                                        
+                                </li>
+                                <li>Twitter
+                                    <svg class="soc-line" width="1" height="22" viewBox="0 0 1 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="0.5" x2="0.5" y2="22" stroke="#212121" stroke-opacity="0.2"/>
+                                    </svg>                                        
+                                </li>
+                                <li>Facebook
+                                    <svg class="soc-line" width="1" height="22" viewBox="0 0 1 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="0.5" x2="0.5" y2="22" stroke="#212121" stroke-opacity="0.2"/>
+                                    </svg>                                        
+                                </li>
+                                <li>LinkedIn</li>
+                            </ul>
+                        </div>
+                        <button data-menu-close  class="menu-button menu-close" type="button" data-menu-button>
+                            <svg width="40px" height="40px">
+                                <use href="./images/buttons-menu.svg#icon-close_40px"></use>
                             </svg>
-                            <p>info@devstudio.com</p>
-                        </a>
-                    </li>
-                    <li class="header-contacts-item">
-                        <a href="tel:+380961111111">
-                            <svg class="smartphone">
-                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                            </svg>
-                            <p>+38 096 111 11 11</p>
-                        </a>
-                    </li>
-                </ul>
+                    </div>
+
+                </div>
             </div>
         </header>
         <main>
@@ -258,7 +294,7 @@
         </footer>
         
         
-        
+        <script src="./js/menu.js"></script>
      </body>
         
 </html>
