@@ -692,7 +692,7 @@ footer {
   color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .subscribe-input {
     margin-bottom: 20px;
   }
@@ -743,6 +743,19 @@ footer {
   height: 24px;
   margin-left: 10px;
   background-image: url(../images/icon-send.svg);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-tablet-container {
+    padding: 0 50px;
+    margin-bottom: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .team {

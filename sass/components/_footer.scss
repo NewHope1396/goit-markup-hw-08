@@ -67,7 +67,7 @@ footer {
     height: 50px;
     padding: 15px 16px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       margin-bottom: 20px;
     }
 
@@ -120,4 +120,14 @@ footer {
     margin-left: 10px;
   
     background-image: url(../images/icon-send.svg);
+  }
+
+  .footer-tablet-container{
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      padding: 0 50px;
+      margin-bottom: 60px;
+      
+      display: flex;
+      justify-content: space-between;
+    }
   }
