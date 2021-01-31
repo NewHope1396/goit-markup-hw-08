@@ -25,6 +25,10 @@ body {
     
     @media screen and (min-width:767px) {
       color: $accent;
+
+      display: flex;
+      align-items: center;
+      height: 100%;
     }
   }
 
