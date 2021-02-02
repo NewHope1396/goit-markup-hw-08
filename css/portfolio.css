@@ -470,7 +470,6 @@ footer .logo {
   border: none;
   border-radius: 4px;
   display: block;
-  margin-bottom: 15px;
   background-color: #f5f4fa;
   font-weight: 500;
   font-size: 16px;
@@ -480,6 +479,12 @@ footer .logo {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .buttons button {
+    margin-bottom: 15px;
+  }
 }
 
 .buttons button:hover, .buttons button:focus {
@@ -516,13 +521,30 @@ footer .logo {
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cards li:nth-child(odd) {
+    margin-right: 30px;
   }
 }
 
@@ -545,8 +567,13 @@ footer .logo {
 .cards li {
   border: 1px solid #eeeeee;
   max-width: 370px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .cards li {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .cards a {
