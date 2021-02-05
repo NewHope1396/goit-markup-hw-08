@@ -23,3 +23,9 @@
     margin-bottom: 20px;
     margin-right: 0;
   }
+
+  .logo {
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px
+    }
+  }

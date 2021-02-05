@@ -54,7 +54,10 @@ footer {
     @media screen and (min-width: 1200px) {
       
       margin-left: auto;
+
     }
+
+    
   }
   
   .subscribe-input {
@@ -92,6 +95,10 @@ footer {
   
     text-transform: uppercase;
     color: $white;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
   
   .subscribe-button {
@@ -123,11 +130,22 @@ footer {
   }
 
   .footer-tablet-container{
-    @media screen and (min-width: 768px) and (max-width: 1199px){
+    @media screen and (min-width: 768px){
       padding: 0 50px;
       margin-bottom: 60px;
       
       display: flex;
       justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      align-items: baseline;
+    }
+  }
+
+  .subscribe-form {
+    @media screen and (min-width: 1200px) {
+      display:flex;
     }
   }

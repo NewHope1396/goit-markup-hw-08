@@ -6,6 +6,13 @@
    }
 
   }
+
+  .cards li:not(:last-child) {
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
+  }
   
 
   .cards li:nth-child(odd){
@@ -26,9 +33,7 @@
     }
   }
 
-  .cards li:not(:last-child) {
-    margin-bottom: 30px;
-  }
+
   
   .cards li {
     border: 1px solid #eeeeee;
