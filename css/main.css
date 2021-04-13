@@ -52,24 +52,6 @@ ul {
   font-weight: 700;
 }
 
-body {
-  color: #212121;
-  font-family: "Roboto", sans-serif;
-  background-color: #ffffff;
-}
-
-.container {
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
 .centred {
   text-align: center;
 }
@@ -123,6 +105,24 @@ body {
   pointer-events: none;
 }
 
+body {
+  color: #212121;
+  font-family: "Roboto", sans-serif, sans-serif;
+  background-color: #ffffff;
+}
+
+.container {
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   header {
     font-weight: 500;
@@ -153,7 +153,7 @@ body {
     margin-bottom: 64px;
   }
   .header-contacts li {
-    font-weight: 500px;
+    font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.02em;
   }
@@ -450,7 +450,7 @@ body {
 .logo-first-part,
 .logo-second-part,
 .logo-footer-second-part {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif, sans-serif;
   font-size: 26px;
   line-height: 1.19;
   font-weight: 700;
@@ -937,6 +937,7 @@ footer .logo {
 
 .clients svg {
   width: 100%;
+  max-width: 105px;
 }
 
 .clients a:hover,
