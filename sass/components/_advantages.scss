@@ -1,5 +1,5 @@
 .advantages h3 {
-    font-weight: 700;
+    font-weight: $bold;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -9,7 +9,7 @@
   .advantages p {
     color: $secondaryColor;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: $normal;
     line-height: 1.7;
     letter-spacing: 0.03em;
   }

@@ -60,7 +60,7 @@
   
   .cards h2 {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: $bold;
     line-height: 2;
     letter-spacing: 0.06em;
   }
@@ -68,7 +68,7 @@
   .cards p {
     font-size: 16px;
     color: $secondaryColor;
-    font-weight: 400;
+    font-weight: $normal;
     line-height: 1.87;
     letter-spacing: 0.03em;
   }

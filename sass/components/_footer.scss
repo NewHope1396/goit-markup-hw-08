@@ -38,7 +38,7 @@ footer {
     color: $white;
   
     font-size: 14px;
-    font-weight: 700;
+    font-weight: $bold;
     line-height: 1.14;
     letter-spacing: 0.03em;
     margin-bottom: 20px;
@@ -91,7 +91,7 @@ footer {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    font-weight: 700;
+    font-weight: $bold;
   
     text-transform: uppercase;
     color: $white;
@@ -112,7 +112,7 @@ footer {
   
     font-size: 16px;
     text-transform: capitalize;
-    font-weight: 700;
+    font-weight: $bold;
   
     background-color: $accent;
     color: $white;

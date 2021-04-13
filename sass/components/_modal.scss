@@ -73,7 +73,7 @@
     margin-bottom: 12px;
   
     font-size: 20px;
-    font-weight: 700;
+    font-weight: $bold;
     letter-spacing: 0.03em;
     text-align: center;
   }
@@ -87,7 +87,7 @@
   
     font-size: 16px;
     line-height: 1.9;
-    font-weight: 700;
+    font-weight: $bold;
   
     background-color: $accent;
     color: $white;
