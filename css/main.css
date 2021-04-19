@@ -1144,6 +1144,13 @@ footer {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-tablet-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-tablet-container {
     margin-bottom: 0;
