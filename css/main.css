@@ -78,7 +78,7 @@ ul {
   line-height: 1.18;
   letter-spacing: 0.03em;
   font-weight: 700;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
